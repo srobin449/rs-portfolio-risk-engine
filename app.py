@@ -110,7 +110,7 @@ if st.session_state.run:
 
     for i, txt in enumerate(stock_metrics.index):
         ax_ind.annotate(txt,
-                        (annual_volatility[i], annual_returns[i]))
+                        (annual_volatility.iloc[i], annual_returns.iloc[i]))
 
     ax_ind.set_xlabel("Annual Volatility")
     ax_ind.set_ylabel("Annual Return")
